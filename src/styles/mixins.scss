@@ -1,0 +1,13 @@
+@mixin headerFont {
+    margin: 0;
+    color: $white;
+    font-family: system-ui;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+@mixin menuFont {
+    margin: 0;
+    color: $white;
+    font-family: system-ui;
+    font-size: 14px;
+}

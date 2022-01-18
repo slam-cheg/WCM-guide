@@ -1,6 +1,139 @@
-@import '../vendor/normalize.css';
+@import "../vendor/normalize.css";
+.page {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #090e24;
+}
+
 .header {
-  background-color: #dedede;
+  background-color: #090e24;
+  display: flex;
+  height: 50px;
   width: 100%;
-  height: 70px;
+  margin-bottom: 15px;
+}
+
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #b90417;
+  width: 50px;
+  cursor: pointer;
+}
+
+.header__logo {
+  max-width: 50%;
+}
+
+.header__title-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.header__title {
+  margin: 0;
+  color: #fff;
+  font-family: system-ui;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.header__description {
+  margin: 0;
+  color: #fff;
+  font-family: system-ui;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+
+.sidebar {
+  display: flex;
+  max-width: 100%;
+}
+
+.menu {
+  padding: 0;
+}
+
+.menu__item {
+  height: 50px;
+  cursor: pointer;
+  display: flex;
+  list-style: none;
+  margin: 0 0 10px;
+  align-items: center;
+  transition: 0.2s;
+}
+.menu__item:last-of-type {
+  margin: 0;
+}
+.menu__item:hover {
+  transition: 0.2s;
+}
+
+.menu__item_active {
+  border-left-color: #b90417;
+  background-color: #b90417;
+}
+.menu__item_active::after {
+  position: absolute;
+  content: "";
+  left: 5px;
+  border-top: 8px solid transparent;
+  border-left: 6px solid;
+  border-left-color: inherit;
+  border-bottom: 8px solid transparent;
+}
+
+.menu__num-wrapper {
+  display: flex;
+  margin-left: 5px;
+  width: 50px;
+  height: 100%;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu__num {
+  margin: 0;
+  color: #fff;
+  font-family: system-ui;
+  font-size: 14px;
+  font-size: 22px;
+  font-weight: 500;
+  color: #090e24;
+}
+
+.menu__text-wrapper {
+  margin-left: 10px;
+  max-width: 230px;
+}
+
+.menu__text {
+  margin: 0;
+  color: #fff;
+  font-family: system-ui;
+  font-size: 14px;
+}
+
+.home-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-screen__image {
+  max-width: 100%;
+  max-height: calc(100% - 65px);
 }
