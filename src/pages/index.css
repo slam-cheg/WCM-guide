@@ -1,0 +1,6 @@
+@import '../vendor/normalize.css';
+.header {
+  background-color: #dedede;
+  width: 100%;
+  height: 70px;
+}
