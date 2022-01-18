@@ -2,6 +2,9 @@
 @import "../styles/variables.scss";
 @import "../styles/mixins.scss";
 @import "../styles/blocks/page/page.scss";
+@import "../styles/blocks/section-heading/section-heading.scss";
+@import "../styles/blocks/section-heading/__title/section-heading__title.scss";
+@import "../styles/blocks/page/__light/page__light.scss";
 // header
 @import "../styles/blocks/header/header.scss";
 @import "../styles/blocks/header/__logo-wrapper/header__logo-wrapper.scss";
@@ -11,6 +14,7 @@
 @import "../styles/blocks/header/__description/header__description.scss";
 //content
 @import "../styles/blocks/content/content.scss";
+@import "../styles/blocks/content/__disabled/content__disabled.scss";
 //sidebar
 @import "../styles/blocks/sidebar/sidebar.scss";
 @import "../styles/blocks/menu/menu.scss";
@@ -22,3 +26,6 @@
 //homescreen
 @import "../styles/blocks/home-screen/home-screen.scss";
 @import "../styles/blocks/home-screen/__image/home-screen__image.scss";
+//first-screen
+@import "../styles/blocks/first-screen/first-screen.scss";
+@import "../styles/blocks/first-screen/__image/first-screen__image.scss";
