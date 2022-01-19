@@ -11,3 +11,19 @@
     font-family: system-ui;
     font-size: 14px;
 }
+@mixin h3 {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 20px;
+}
+@mixin description {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 16px;
+}
+
+@mixin defaultText {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 16px;
+}

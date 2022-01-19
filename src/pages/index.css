@@ -2,6 +2,7 @@
 .page {
   background-color: #090e24;
   transition: 0.3s;
+  min-height: 100vh;
 }
 
 .page__light {
@@ -65,6 +66,7 @@
   grid-template-columns: auto auto;
   gap: 20px;
   padding-top: 70px;
+  min-height: calc(100vh - 70px);
 }
 
 .content__disabled {
@@ -92,7 +94,8 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   border: 1px solid #b90417;
-  padding: 20px;
+  padding: 50px 20px;
+  gap: 20px;
 }
 
 .section-content__card {
@@ -100,6 +103,57 @@
   flex-direction: column;
   position: relative;
   padding: 20px;
+  box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.25);
+}
+
+.section-content__card__title {
+  margin: 0;
+  font-family: system-ui;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.section-content__card__num-wrapper {
+  background-color: #b90417;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 0;
+}
+.section-content__card__num-wrapper span {
+  margin: 0;
+  color: #fff;
+  font-family: system-ui;
+  font-size: 14px;
+  font-size: 20px;
+}
+
+.section-content__card__description {
+  margin: 0;
+  font-family: system-ui;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #e48879;
+}
+
+.section-content__card__list {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.section-content__card__list-item {
+  margin: 0;
+  font-family: system-ui;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+.section-content__card__list-item:last-of-type {
+  margin-bottom: 0;
 }
 
 .sidebar {
@@ -119,17 +173,10 @@
 }
 
 .menu_disabled {
-  width: 65px;
   transition: 0.2s;
 }
 .menu_disabled .menu__text {
-  visibility: hidden;
-  opacity: 0;
-  transform: scaleX(0);
-}
-.menu_disabled .menu__text-wrapper {
-  width: 0;
-  transition: 0.2s;
+  display: none;
 }
 
 .menu__item {
@@ -229,5 +276,5 @@
 .first-screen__image {
   max-width: 100%;
   max-height: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }

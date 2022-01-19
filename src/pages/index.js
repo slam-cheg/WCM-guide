@@ -12,7 +12,6 @@ const logotype = document.querySelector(".header__logo");
 const activeClass = "menu__item_active";
 const deactiveSectionClass = "content__disabled";
 const page = document.querySelector(".page");
-
 const sectionsArray = []; // Массив зависимости между секицями и пунктами меню(зависимость создается автоматически)
 
 checkDOMElements();
@@ -32,7 +31,6 @@ function checkDOMElements() {
 
 function setEventListeners() {
     sidebar.addEventListener("mouseover", menuOpen);
-    sidebar.addEventListener("mouseout", menuClose);
     logotype.addEventListener("click", disableSlides);
     sectionsArray.forEach((obj) => {
         if (obj.button !== undefined) {
@@ -52,6 +50,7 @@ function menuClose() {
 }
 
 function changeSlides(obj) {
+    sidebar.addEventListener("mouseout", menuClose);
     const btn = obj.button;
     const sect = obj.section;
 
@@ -80,4 +79,6 @@ function disableSlides() {
     });
     slides[0].classList.remove(deactiveSectionClass);
     page.classList.remove("page__light");
+    sidebar.removeEventListener("mouseout", menuClose);
+    menuOpen();
 }

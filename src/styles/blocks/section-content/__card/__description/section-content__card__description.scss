@@ -1,0 +1,5 @@
+.section-content__card__description {
+    @include description;
+    margin-bottom: 20px;
+    color: $darkSalmon;
+}
