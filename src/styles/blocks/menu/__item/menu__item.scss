@@ -13,20 +13,17 @@
 
     &:hover {
         transition: 0.2s;
-    }
-}
+        background-color: $blue;
+        border-left-color: $blue;
 
-.menu__item_active {
-    border-left-color: $red;
-    background-color: $red;
-
-    &::after {
-        position: absolute;
-        content: "";
-        left: 5px;
-        border-top: 8px solid transparent;
-        border-left: 6px solid;
-        border-left-color: inherit;
-        border-bottom: 8px solid transparent;
+        &::after {
+            position: absolute;
+            content: "";
+            left: 5px;
+            border-top: 8px solid transparent;
+            border-left: 6px solid;
+            border-left-color: inherit;
+            border-bottom: 8px solid transparent;
+        }
     }
 }

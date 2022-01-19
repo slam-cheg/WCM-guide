@@ -4,6 +4,8 @@ import homescreen from "../images/homescreen.jpg";
 import firstscreen from "../images/firstscreen.jpg";
 import Reporting from "../images/Reporting.jpg";
 
+const sidebar = document.querySelector(".sidebar");
+const menuContainer = sidebar.querySelector(".menu");
 const menuButtons = document.querySelectorAll(".menu__item");
 const slides = document.querySelectorAll(".section");
 const logotype = document.querySelector(".header__logo");
@@ -11,31 +13,43 @@ const activeClass = "menu__item_active";
 const deactiveSectionClass = "content__disabled";
 const page = document.querySelector(".page");
 
-const sections = [
-    {
-        name: "default",
-        section: slides[0],
-    },
-    {
-        name: "first-screen",
-        button: menuButtons[0],
-        section: slides[1],
-    },
-    {
-        name: "second-screen",
-        button: menuButtons[1],
-        section: slides[2],
-    },
-];
+const sectionsArray = []; // Массив зависимости между секицями и пунктами меню(зависимость создается автоматически)
 
-logotype.addEventListener("click", disableSlides);
-sections.forEach((obj) => {
-    if (obj.button !== undefined) {
-        obj.button.addEventListener("click", () => {
-            changeSlides(obj);
-        });
+checkDOMElements();
+function checkDOMElements() {
+    slides.forEach((section) => {
+        sectionsArray.push({ name: `${section.classList[1]}`, section: section });
+    });
+    for (let i = 0; i < sectionsArray.length; i++) {
+        if (sectionsArray[i].name === "home-screen") {
+            continue;
+        } else {
+            sectionsArray[i].button = menuButtons[i - 1];
+        }
     }
-});
+    setEventListeners();
+}
+
+function setEventListeners() {
+    sidebar.addEventListener("mouseover", menuOpen);
+    sidebar.addEventListener("mouseout", menuClose);
+    logotype.addEventListener("click", disableSlides);
+    sectionsArray.forEach((obj) => {
+        if (obj.button !== undefined) {
+            obj.button.addEventListener("click", () => {
+                changeSlides(obj);
+            });
+        }
+    });
+}
+
+function menuOpen() {
+    menuContainer.classList.remove("menu_disabled");
+}
+
+function menuClose() {
+    menuContainer.classList.add("menu_disabled");
+}
 
 function changeSlides(obj) {
     const btn = obj.button;

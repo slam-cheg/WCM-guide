@@ -1,6 +1,6 @@
 .content {
     display: grid;
-    grid-template-columns: 300px auto;
+    grid-template-columns: auto auto;
     gap: 20px;
-    height: 100%;
+    padding-top: 70px;
 }

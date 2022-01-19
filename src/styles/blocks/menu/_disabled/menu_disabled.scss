@@ -1,0 +1,15 @@
+.menu_disabled {
+    width: 65px;
+    transition: .2s;
+
+    .menu__text {
+        visibility: hidden;
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .menu__text-wrapper {
+        width: 0;
+        transition: 0.2s;
+    }
+}

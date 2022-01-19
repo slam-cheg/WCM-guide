@@ -1,5 +1,6 @@
 .sidebar {
     display: flex;
-    max-width: 100%;
     background-color: $darkblue;
+    height: 100%;
+    transition: .3s;
 }
