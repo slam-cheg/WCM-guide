@@ -20,80 +20,80 @@
             <aside class="sidebar">
                 <ul class="menu">
                     <li class="menu__item" id="wcm-structure">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">1</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/obzorStructure.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Обзор структуры WCM</p>
                         </div>
                     </li>
                     <li class="menu__item" id="reporting">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">2</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/reporting.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Reporting</p>
                         </div>
                     </li>
                     <li class="menu__item" id="campaign-tree">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">3</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/campaignTree.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Campaign tree</p>
                         </div>
                     </li>
                     <li class="menu__item" id="settings">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">4</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/settingsMetrics.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Настройка периода и&nbsp;метрик</p>
                         </div>
                     </li>
                     <li class="menu__item" id="xlsx-reports">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">5</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/downloadXlsx.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Выгрузка отчетов .xlsx и&nbsp;формирование гостевых ссылок</p>
                         </div>
                     </li>
                     <li class="menu__item" id="auditoria-report">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">6</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/auditories.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Отчет по пересечению аудитории</p>
                         </div>
                     </li>
                     <li class="menu__item" id="views-report">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">7</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/reportClicks.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Отчет по распределению показов, кликов, конверсий и&nbsp;частоты</p>
                         </div>
                     </li>
                     <li class="menu__item" id="conversion-report">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">8</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/conversions.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Отчет по конверсиям</p>
                         </div>
                     </li>
                     <li class="menu__item" id="automatization">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">9</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/automatization.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Автоматизация выгрузки отчетов</p>
                         </div>
                     </li>
                     <li class="menu__item" id="metrics">
-                        <div class="menu__num-wrapper">
-                            <p class="menu__num">10</p>
+                        <div class="menu__ico-wrapper">
+                            <img src="<%=require('./images/metricsDescr.svg')%>" alt="" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Описание метрик</p>
@@ -101,77 +101,78 @@
                     </li>
                 </ul>
             </aside>
+            <div class="content__wrapper">
+                <section class="section home-screen">
+                    <img class="home-screen__image" src="<%=require('./images/homescreen.jpg')%>" alt="Главная страница" />
+                </section>
 
-            <section class="section home-screen">
-                <img class="home-screen__image" src="<%=require('./images/homescreen.jpg')%>" alt="Главная страница" />
-            </section>
-
-            <section class="section first-screen content__disabled">
-                <div class="section-heading">
-                    <h2 class="section-heading__title">Интерфейс WCM содержит <span>5 основных вкладок:</span></h2>
-                </div>
-
-                <img class="first-screen__image" src="<%=require('./images/firstscreen.jpg')%>" alt="Интерфейс WCM" />
-
-                <div class="section-content">
-                    <div class="section-content__card">
-                        <div class="section-content__card__num-wrapper"><span>1</span></div>
-                        <h3 class="section-content__card__title">Campaigns</h3>
-                        <p class="section-content__card__description">Кампании</p>
-                        <ul class="section-content__card__list">
-                            <li class="section-content__card__list-item">Первичный мониторинг результатов размещения</li>
-                            <li class="section-content__card__list-item">Структура рекламных компаний</li>
-                        </ul>
+                <section class="section first-screen content_disabled">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title">Интерфейс WCM содержит <span>5 основных вкладок:</span></h2>
                     </div>
-                    <div class="section-content__card">
-                        <div class="section-content__card__num-wrapper"><span>2</span></div>
-                        <h3 class="section-content__card__title">Creative library</h3>
-                        <p class="section-content__card__description">Библиотека креативов</p>
-                        <ul class="section-content__card__list">
-                            <li class="section-content__card__list-item">Создание и управление креативами (в т.ч. динамические)</li>
-                        </ul>
-                    </div>
-                    <div class="section-content__card">
-                        <div class="section-content__card__num-wrapper"><span>3</span></div>
-                        <h3 class="section-content__card__title">Convertions</h3>
-                        <p class="section-content__card__description">Конверсии</p>
-                        <ul class="section-content__card__list">
-                            <li class="section-content__card__list-item">Создание и управление страницами конверсий</li>
-                        </ul>
-                    </div>
-                    <div class="section-content__card">
-                        <div class="section-content__card__num-wrapper"><span>4</span></div>
-                        <h3 class="section-content__card__title">Reporting</h3>
-                        <p class="section-content__card__description">Кампании</p>
-                        <ul class="section-content__card__list">
-                            <li class="section-content__card__list-item">Подробный мониторинг размещений</li>
-                            <li class="section-content__card__list-item">Создание расширенных отчетов по компании</li>
-                        </ul>
-                    </div>
-                    <div class="section-content__card">
-                        <div class="section-content__card__num-wrapper"><span>5</span></div>
-                        <h3 class="section-content__card__title">Creative library</h3>
-                        <p class="section-content__card__description">Шаблоны отчетов</p>
-                        <ul class="section-content__card__list">
-                            <li class="section-content__card__list-item">Создание шаблонов отчетов с автоматической отправкой по расписанию</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
 
-            <section class="section third-screen content__disabled">
-                <div class="section-heading">
-                    <h2 class="section-heading__title">Reporting</h2>
-                </div>
-                <img class="first-screen__image" src="<%=require('./images/Reporting.jpg')%>" alt="Reporting" />
-            </section>
+                    <img class="first-screen__image" src="<%=require('./images/firstscreen.jpg')%>" alt="Интерфейс WCM" />
 
-            <section class="section fourth-screen content__disabled">
-                <div class="section-heading">
-                    <h2 class="section-heading__title">Campaign tree</h2>
-                </div>
-                <img class="first-screen__image" src="<%=require('./images/Reporting.jpg')%>" alt="Campaign tree" />
-            </section>
+                    <div class="section-content">
+                        <div class="section-content__card">
+                            <div class="section-content__card__num-wrapper"><span>1</span></div>
+                            <h3 class="section-content__card__title">Campaigns</h3>
+                            <p class="section-content__card__description">Кампании</p>
+                            <ul class="section-content__card__list">
+                                <li class="section-content__card__list-item">Первичный мониторинг результатов размещения</li>
+                                <li class="section-content__card__list-item">Структура рекламных компаний</li>
+                            </ul>
+                        </div>
+                        <div class="section-content__card">
+                            <div class="section-content__card__num-wrapper"><span>2</span></div>
+                            <h3 class="section-content__card__title">Creative library</h3>
+                            <p class="section-content__card__description">Библиотека креативов</p>
+                            <ul class="section-content__card__list">
+                                <li class="section-content__card__list-item">Создание и управление креативами (в т.ч. динамические)</li>
+                            </ul>
+                        </div>
+                        <div class="section-content__card">
+                            <div class="section-content__card__num-wrapper"><span>3</span></div>
+                            <h3 class="section-content__card__title">Convertions</h3>
+                            <p class="section-content__card__description">Конверсии</p>
+                            <ul class="section-content__card__list">
+                                <li class="section-content__card__list-item">Создание и управление страницами конверсий</li>
+                            </ul>
+                        </div>
+                        <div class="section-content__card">
+                            <div class="section-content__card__num-wrapper"><span>4</span></div>
+                            <h3 class="section-content__card__title">Reporting</h3>
+                            <p class="section-content__card__description">Кампании</p>
+                            <ul class="section-content__card__list">
+                                <li class="section-content__card__list-item">Подробный мониторинг размещений</li>
+                                <li class="section-content__card__list-item">Создание расширенных отчетов по компании</li>
+                            </ul>
+                        </div>
+                        <div class="section-content__card">
+                            <div class="section-content__card__num-wrapper"><span>5</span></div>
+                            <h3 class="section-content__card__title">Creative library</h3>
+                            <p class="section-content__card__description">Шаблоны отчетов</p>
+                            <ul class="section-content__card__list">
+                                <li class="section-content__card__list-item">Создание шаблонов отчетов с автоматической отправкой по расписанию</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section third-screen content_disabled">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title">Reporting</h2>
+                    </div>
+                    <img class="first-screen__image" src="<%=require('./images/Reporting.jpg')%>" alt="Reporting" />
+                </section>
+
+                <section class="section fourth-screen content_disabled">
+                    <div class="section-heading">
+                        <h2 class="section-heading__title">Campaign tree</h2>
+                    </div>
+                    <img class="first-screen__image" src="<%=require('./images/Reporting.jpg')%>" alt="Campaign tree" />
+                </section>
+            </div>
         </main>
     </body>
 </html>

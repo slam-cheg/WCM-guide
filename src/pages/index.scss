@@ -13,7 +13,8 @@
 @import "../styles/blocks/header/__description/header__description.scss";
 //content
 @import "../styles/blocks/content/content.scss";
-@import "../styles/blocks/content/__disabled/content__disabled.scss";
+@import "../styles/blocks/content/_disabled/content_disabled.scss";
+@import "../styles/blocks/content/__wrapper/_resized/content__wrapper_resized.scss";
 //sections inside styles
 @import "../styles/blocks/section-heading/section-heading.scss";
 @import "../styles/blocks/section-heading/__title/section-heading__title.scss";
@@ -26,12 +27,13 @@
 @import "../styles/blocks/section-content/__card/__list-item/section-content__card__list-item.scss";
 //sidebar
 @import "../styles/blocks/sidebar/sidebar.scss";
+@import "../styles/blocks/sidebar/_disabled/sidebar_disabled.scss";
 @import "../styles/blocks/menu/menu.scss";
 @import "../styles/blocks/menu/_disabled/menu_disabled.scss";
 @import "../styles/blocks/menu/__item/menu__item.scss";
 @import "../styles/blocks/menu/__item/_active/menu__item_active.scss";
-@import "../styles/blocks/menu/__num-wrapper/menu__num-wrapper.scss";
-@import "../styles/blocks/menu/__num/menu__num.scss";
+@import "../styles/blocks/menu/__ico-wrapper/menu__ico-wrapper.scss";
+@import "../styles/blocks/menu/__ico/menu__ico.scss";
 @import "../styles/blocks/menu/__text-wrapper/menu__text-wrapper.scss";
 @import "../styles/blocks/menu/__text/menu__text.scss";
 //homescreen
