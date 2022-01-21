@@ -1,0 +1,11 @@
+export const sidebar = document.querySelector(".sidebar");
+export const menuContainer = sidebar.querySelector(".menu");
+export const menuButtons = document.querySelectorAll(".menu__item");
+export const slides = document.querySelectorAll(".section");
+export const logotype = document.querySelector(".header__logo");
+export const activeClass = "menu__item_active";
+export const deactiveSectionClass = "content_disabled";
+export const page = document.querySelector(".page");
+export const content = document.querySelector(".content__wrapper");
+export const cards = document.querySelectorAll(".section-content__card");
+export const popup = document.querySelector(".popup");

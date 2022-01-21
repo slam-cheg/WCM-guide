@@ -42,3 +42,8 @@
 //first-screen
 @import "../styles/blocks/first-screen/first-screen.scss";
 @import "../styles/blocks/first-screen/__image/first-screen__image.scss";
+
+// popup
+@import "../styles/blocks/popup/popup.scss";
+@import "../styles/blocks/popup/_opened/popup_opened.scss";
+@import '../styles/blocks/popup/__container/popup__container.scss';

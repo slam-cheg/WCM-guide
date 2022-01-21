@@ -3,4 +3,6 @@
     background-color: $darkblue;
     height: 100%;
     transition: .3s;
+    position: relative;
+    z-index: 100;
 }

@@ -1,19 +1,12 @@
 import "./index.css";
 import "../components/images.js";
+import { cards, slides, sidebar, menuContainer, menuButtons, logotype, activeClass, deactiveSectionClass, page, content, popup } from "../components/constants.js";
+import { openPopup, closePopup, closePopupByEscape, closePopupByOverlay, popupAddListeners } from "../components/popup";
 
-const sidebar = document.querySelector(".sidebar");
-const menuContainer = sidebar.querySelector(".menu");
-const menuButtons = document.querySelectorAll(".menu__item");
-const slides = document.querySelectorAll(".section");
-const logotype = document.querySelector(".header__logo");
-const activeClass = "menu__item_active";
-const deactiveSectionClass = "content_disabled";
-const page = document.querySelector(".page");
-const content = document.querySelector(".content__wrapper");
 const sectionsArray = []; // Массив зависимости между секицями и пунктами меню(зависимость создается автоматически)
 
-checkDOMElements();
-function checkDOMElements() {
+checkDOMElements(slides);
+function checkDOMElements(slides) {
     slides.forEach((section) => {
         sectionsArray.push({ name: `${section.classList[1]}`, section: section });
     });
@@ -36,6 +29,11 @@ function setEventListeners() {
                 changeSlides(obj);
             });
         }
+    });
+    cards.forEach((card) => {
+        card.addEventListener("click", (event) => {
+            openPopup(event);
+        });
     });
 }
 
