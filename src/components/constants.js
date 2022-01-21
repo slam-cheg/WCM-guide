@@ -8,4 +8,4 @@ export const deactiveSectionClass = "content_disabled";
 export const page = document.querySelector(".page");
 export const content = document.querySelector(".content__wrapper");
 export const cards = document.querySelectorAll(".section-content__card");
-export const popup = document.querySelector(".popup");
+export const popups = document.querySelectorAll(".popup");

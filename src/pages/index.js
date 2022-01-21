@@ -1,6 +1,6 @@
 import "./index.css";
 import "../components/images.js";
-import { cards, slides, sidebar, menuContainer, menuButtons, logotype, activeClass, deactiveSectionClass, page, content, popup } from "../components/constants.js";
+import { cards, slides, sidebar, menuContainer, menuButtons, logotype, activeClass, deactiveSectionClass, page, content, popups } from "../components/constants.js";
 import { openPopup, closePopup, closePopupByEscape, closePopupByOverlay, popupAddListeners } from "../components/popup";
 
 const sectionsArray = []; // Массив зависимости между секицями и пунктами меню(зависимость создается автоматически)
@@ -31,8 +31,8 @@ function setEventListeners() {
         }
     });
     cards.forEach((card) => {
-        card.addEventListener("click", (event) => {
-            openPopup(event);
+        card.addEventListener("click", () => {
+            openPopup(card.id);
         });
     });
 }
