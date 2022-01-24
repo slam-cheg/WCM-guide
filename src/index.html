@@ -9,7 +9,9 @@
     <body class="page">
         <header class="header">
             <div class="header__logo-wrapper">
-                <img class="header__logo" src="<%=require('./images/logo.png')%>" alt="Weborama" />
+                <a href="/" class="header__logo-wrapper">
+                    <img class="header__logo" src="<%=require('./images/logo.png')%>" alt="Weborama" />
+                </a>
             </div>
             <div class="header__title-wrapper">
                 <p class="header__title">Weborama campaign manager</p>
@@ -20,16 +22,18 @@
             <aside class="sidebar">
                 <ul class="menu">
                     <li class="menu__item" id="wcm-structure">
-                        <div class="menu__ico-wrapper">
-                            <img src="<%=require('./images/obzorStructure.svg')%>" alt="" class="menu__ico" />
-                        </div>
-                        <div class="menu__text-wrapper">
-                            <p class="menu__text">Обзор структуры WCM</p>
-                        </div>
+                        <a class="menu__item menu__link" href="./campaigns.html">
+                            <div class="menu__ico-wrapper">
+                                <img src="<%=require('./images/obzorStructure.svg')%>" alt="Обзор" class="menu__ico" />
+                            </div>
+                            <div class="menu__text-wrapper">
+                                <p class="menu__text">Обзор структуры WCM</p>
+                            </div>
+                        </a>
                     </li>
                     <li class="menu__item" id="reporting">
                         <div class="menu__ico-wrapper">
-                            <img src="<%=require('./images/reporting.svg')%>" alt="" class="menu__ico" />
+                            <img src="<%=require('./images/reporting.svg')%>" alt="Отчеты" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Reporting</p>
@@ -37,7 +41,7 @@
                     </li>
                     <li class="menu__item" id="campaign-tree">
                         <div class="menu__ico-wrapper">
-                            <img src="<%=require('./images/campaignTree.svg')%>" alt="" class="menu__ico" />
+                            <img src="<%=require('./images/campaignTree.svg')%>" alt="Древо" class="menu__ico" />
                         </div>
                         <div class="menu__text-wrapper">
                             <p class="menu__text">Campaign tree</p>
@@ -106,59 +110,6 @@
                     <img class="home-screen__image" src="<%=require('./images/homescreen.jpg')%>" alt="Главная страница" />
                 </section>
 
-                <section class="section first-screen content_disabled">
-                    <div class="section-heading">
-                        <h2 class="section-heading__title">Интерфейс WCM содержит <span>5 основных вкладок:</span></h2>
-                    </div>
-
-                    <img class="first-screen__image" src="<%=require('./images/firstscreen.jpg')%>" alt="Интерфейс WCM" />
-
-                    <div class="section-content">
-                        <div class="section-content__card" id="campaigns">
-                            <div class="section-content__card__num-wrapper"><span>1</span></div>
-                            <h3 class="section-content__card__title">Campaigns</h3>
-                            <p class="section-content__card__description">Кампании</p>
-                            <ul class="section-content__card__list">
-                                <li class="section-content__card__list-item">Первичный мониторинг результатов размещения</li>
-                                <li class="section-content__card__list-item">Структура рекламных компаний</li>
-                            </ul>
-                        </div>
-                        <div class="section-content__card" id="creative-library">
-                            <div class="section-content__card__num-wrapper"><span>2</span></div>
-                            <h3 class="section-content__card__title">Creative library</h3>
-                            <p class="section-content__card__description">Библиотека креативов</p>
-                            <ul class="section-content__card__list">
-                                <li class="section-content__card__list-item">Создание и управление креативами (в т.ч. динамические)</li>
-                            </ul>
-                        </div>
-                        <div class="section-content__card" id="conversions">
-                            <div class="section-content__card__num-wrapper"><span>3</span></div>
-                            <h3 class="section-content__card__title">Convertions</h3>
-                            <p class="section-content__card__description">Конверсии</p>
-                            <ul class="section-content__card__list">
-                                <li class="section-content__card__list-item">Создание и управление страницами конверсий</li>
-                            </ul>
-                        </div>
-                        <div class="section-content__card" id="reporting">
-                            <div class="section-content__card__num-wrapper"><span>4</span></div>
-                            <h3 class="section-content__card__title">Reporting</h3>
-                            <p class="section-content__card__description">Кампании</p>
-                            <ul class="section-content__card__list">
-                                <li class="section-content__card__list-item">Подробный мониторинг размещений</li>
-                                <li class="section-content__card__list-item">Создание расширенных отчетов по компании</li>
-                            </ul>
-                        </div>
-                        <div class="section-content__card" id="report-center">
-                            <div class="section-content__card__num-wrapper"><span>5</span></div>
-                            <h3 class="section-content__card__title">Report center</h3>
-                            <p class="section-content__card__description">Шаблоны отчетов</p>
-                            <ul class="section-content__card__list">
-                                <li class="section-content__card__list-item">Создание шаблонов отчетов с автоматической отправкой по расписанию</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
                 <section class="section third-screen content_disabled">
                     <div class="section-heading">
                         <h2 class="section-heading__title">Reporting</h2>
@@ -174,30 +125,5 @@
                 </section>
             </div>
         </main>
-        <div class="popup" id="campaigns">
-            <div class="popup__container">
-                <span>CAMPAIGN</span>
-            </div>
-        </div>
-        <div class="popup" id="creative-library">
-            <div class="popup__container">
-                <span>CREATIVE-LIBRARY</span>
-            </div>
-        </div>
-        <div class="popup" id="conversions">
-            <div class="popup__container">
-                <span>CONVERSIONS</span>
-            </div>
-        </div>
-        <div class="popup" id="reporting">
-            <div class="popup__container">
-                <span>REPORTING</span>
-            </div>
-        </div>
-        <div class="popup" id="report-center">
-            <div class="popup__container">
-                <span>REPORT CENTER</span>
-            </div>
-        </div>
     </body>
 </html>

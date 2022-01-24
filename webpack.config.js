@@ -40,7 +40,12 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
+            filename: "index.html",
             template: "./src/index.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "campaigns.html",
+            template: "./src/campaigns/campaigns.html",
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),

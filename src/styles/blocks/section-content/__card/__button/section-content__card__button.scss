@@ -1,0 +1,14 @@
+.section-content__card__button {
+    @include button;
+    background-color: transparent;
+    transition: .3s;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+
+    &:hover {
+        color: $black;
+        transform: translateX(5px);
+        transition: .3s;
+    }
+}

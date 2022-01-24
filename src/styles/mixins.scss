@@ -27,3 +27,13 @@
     font-family: system-ui;
     font-size: 16px;
 }
+
+@mixin button {
+    border: none;
+    cursor: pointer;
+    color: $red;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui;
+    font-size: 16px;
+}

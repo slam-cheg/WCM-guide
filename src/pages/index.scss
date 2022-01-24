@@ -13,7 +13,6 @@
 @import "../styles/blocks/header/__description/header__description.scss";
 //content
 @import "../styles/blocks/content/content.scss";
-@import "../styles/blocks/content/_disabled/content_disabled.scss";
 @import "../styles/blocks/content/__wrapper/_resized/content__wrapper_resized.scss";
 //sections inside styles
 @import "../styles/blocks/section-heading/section-heading.scss";
@@ -25,6 +24,7 @@
 @import "../styles/blocks/section-content/__card/__description/section-content__card__description.scss";
 @import "../styles/blocks/section-content/__card/__list/section-content__card__list.scss";
 @import "../styles/blocks/section-content/__card/__list-item/section-content__card__list-item.scss";
+@import "../styles/blocks/section-content/__card/__button/section-content__card__button.scss";
 //sidebar
 @import "../styles/blocks/sidebar/sidebar.scss";
 @import "../styles/blocks/sidebar/_disabled/sidebar_disabled.scss";
@@ -36,6 +36,7 @@
 @import "../styles/blocks/menu/__ico/menu__ico.scss";
 @import "../styles/blocks/menu/__text-wrapper/menu__text-wrapper.scss";
 @import "../styles/blocks/menu/__text/menu__text.scss";
+@import "../styles/blocks/menu/__link/menu__link.scss";
 //homescreen
 @import "../styles/blocks/home-screen/home-screen.scss";
 @import "../styles/blocks/home-screen/__image/home-screen__image.scss";
@@ -46,4 +47,4 @@
 // popup
 @import "../styles/blocks/popup/popup.scss";
 @import "../styles/blocks/popup/_opened/popup_opened.scss";
-@import '../styles/blocks/popup/__container/popup__container.scss';
+@import "../styles/blocks/popup/__container/popup__container.scss";
