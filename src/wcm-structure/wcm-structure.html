@@ -4,7 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Campaigns | WCM-guide</title>
+        <title>WCM-structure | WCM-guide</title>
     </head>
     <body class="page page__light">
         <header class="header">
@@ -21,13 +21,23 @@
         <main class="content">
             <aside class="sidebar sidebar_disabled">
                 <ul class="menu menu_disabled">
-                   <li class="menu__item" id="wcm-structure">
+                    <li class="menu__item" id="wcm-structure">
                         <a class="menu__item menu__link" href="./campaigns.html">
                             <div class="menu__ico-wrapper">
                                 <img src="<%=require('../images/obzorStructure.svg')%>" alt="Обзор" class="menu__ico" />
                             </div>
                             <div class="menu__text-wrapper">
                                 <p class="menu__text">Обзор структуры WCM</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="menu__item" id="campaigns">
+                        <a class="menu__link" href="./campaigns.html">
+                            <div class="menu__ico-wrapper">
+                                <img src="<%=require('../images/obzorStructure.svg')%>" alt="Обзор" class="menu__ico" />
+                            </div>
+                            <div class="menu__text-wrapper">
+                                <p class="menu__text">Вкладка Campaigns</p>
                             </div>
                         </a>
                     </li>
@@ -133,14 +143,21 @@
 
                     <div class="section-content">
                         <div class="section-content__card" id="campaigns">
-                            <div class="section-content__card__num-wrapper"><span>1</span></div>
-                            <h3 class="section-content__card__title">Campaigns</h3>
-                            <p class="section-content__card__description">Кампании</p>
-                            <ul class="section-content__card__list">
-                                <li class="section-content__card__list-item">Первичный мониторинг результатов размещения</li>
-                                <li class="section-content__card__list-item">Структура рекламных кампаний</li>
-                            </ul>
-                            <button class="section-content__card__button">Подробнее&nbsp;&#10230;</button>
+                            <!-- Написать стили и замену контента -->
+                            <div class="section-content__card_default section-content__card_default_deactive">
+                                <div class="section-content__card__num-wrapper"><span>1</span></div>
+                                <h3 class="section-content__card__title">Campaigns</h3>
+                                <p class="section-content__card__description">Кампании</p>
+                                <ul class="section-content__card__list">
+                                    <li class="section-content__card__list-item">Первичный мониторинг результатов размещения</li>
+                                    <li class="section-content__card__list-item">Структура рекламных кампаний</li>
+                                </ul>
+                            </div>
+                            <div class="section-content__card_hover section-content__card_hover_deactive">
+                                <div class="section-content__card__heading"><span>Возможности раздела Campaigns</span></div>
+                                <div class="section-content__card__selector"><span>Просмотр кампании</span></div>
+                                <div class="section-content__card__selector"><span>Отчет по кампании</span></div>
+                            </div>
                         </div>
                         <div class="section-content__card" id="creative-library">
                             <div class="section-content__card__num-wrapper"><span>2</span></div>
@@ -149,16 +166,16 @@
                             <ul class="section-content__card__list">
                                 <li class="section-content__card__list-item">Создание и управление креативами (в т.ч. динамические)</li>
                             </ul>
-                            <button class="section-content__card__button">Подробнее&nbsp;&#10230;</button>
                         </div>
                         <div class="section-content__card" id="conversions">
-                            <div class="section-content__card__num-wrapper"><span>3</span></div>
-                            <h3 class="section-content__card__title">Convertions</h3>
-                            <p class="section-content__card__description">Конверсии</p>
-                            <ul class="section-content__card__list">
-                                <li class="section-content__card__list-item">Создание и управление страницами конверсий</li>
-                            </ul>
-                            <button class="section-content__card__button">Подробнее&nbsp;&#10230;</button>
+                            <div class="section-content__card_default">
+                                <div class="section-content__card__num-wrapper"><span>3</span></div>
+                                <h3 class="section-content__card__title">Convertions</h3>
+                                <p class="section-content__card__description">Конверсии</p>
+                                <ul class="section-content__card__list">
+                                    <li class="section-content__card__list-item">Создание и управление страницами конверсий</li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="section-content__card" id="reporting">
                             <div class="section-content__card__num-wrapper"><span>4</span></div>
@@ -168,7 +185,6 @@
                                 <li class="section-content__card__list-item">Подробный мониторинг размещений</li>
                                 <li class="section-content__card__list-item">Создание расширенных отчетов по компании</li>
                             </ul>
-                            <button class="section-content__card__button">Подробнее&nbsp;&#10230;</button>
                         </div>
                         <div class="section-content__card" id="report-center">
                             <div class="section-content__card__num-wrapper"><span>5</span></div>
@@ -177,13 +193,12 @@
                             <ul class="section-content__card__list">
                                 <li class="section-content__card__list-item">Создание шаблонов отчетов с автоматической отправкой по расписанию</li>
                             </ul>
-                            <button class="section-content__card__button">Подробнее&nbsp;&#10230;</button>
                         </div>
                     </div>
                 </section>
             </div>
         </main>
-        <div class="popup" id="campaigns">
+        <!-- <div class="popup" id="campaigns">
             <div class="popup__container">
                 <span>CAMPAIGN</span>
             </div>
@@ -207,6 +222,6 @@
             <div class="popup__container">
                 <span>REPORT CENTER</span>
             </div>
-        </div>
+        </div> -->
     </body>
 </html>

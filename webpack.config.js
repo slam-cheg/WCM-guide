@@ -44,8 +44,8 @@ module.exports = {
             template: "./src/index.html",
         }),
         new HtmlWebpackPlugin({
-            filename: "campaigns.html",
-            template: "./src/campaigns/campaigns.html",
+            filename: "wcm-structure.html",
+            template: "./src/wcm-structure/wcm-structure.html",
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),
