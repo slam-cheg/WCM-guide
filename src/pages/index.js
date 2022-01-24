@@ -20,6 +20,8 @@ function setMenuActive(menuButtons) {
     menuButtons.forEach((menuButton) => {
         if (menuButton.id === slide.id) {
             menuButton.classList.add("menu__item_active");
+        } else {
+            menuButton.classList.remove("menu__item_active");
         }
     });
 }

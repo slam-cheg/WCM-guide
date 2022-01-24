@@ -271,6 +271,8 @@
 .menu__text-wrapper {
   margin-left: 10px;
   max-width: 230px;
+  display: flex;
+  align-items: center;
 }
 
 .menu__text {
@@ -286,6 +288,10 @@
 .menu__link {
   width: 100%;
   text-decoration: none;
+  height: inherit;
+  display: inherit;
+  transition: inherit;
+  align-items: inherit;
 }
 
 .home-screen {
