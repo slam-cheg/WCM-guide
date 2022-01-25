@@ -1,10 +1,12 @@
 import "./index.css";
 import "../components/images.js";
-import { cards, slide, sidebar, menuContainer, menuButtons, logotype, activeClass, deactiveSectionClass, page, content, popups } from "../components/constants.js";
-import { openPopup, closePopup, closePopupByEscape, closePopupByOverlay, popupAddListeners } from "../components/popup";
+import { menuItems } from "../components/menu.js";
+import { cards, slide, sidebar, menuContainer, menuButtons, logotype, activeClass, deactiveSectionClass, page, content, popups, menuTemplate } from "../components/constants.js";
+import { openPopup, closePopup, closePopupByEscape, closePopupByOverlay, popupAddListeners } from "../components/popup.js";
 
 setEventListeners();
 setMenuActive(menuButtons);
+// renderMenu();
 
 function setEventListeners() {
     sidebar.addEventListener("mouseover", menuOpen);
@@ -34,4 +36,8 @@ function menuClose() {
     if (!slide.classList.contains("home-screen")) {
         menuContainer.classList.add("menu_disabled");
     }
+}
+
+function renderMenu() {
+    sidebar.innerHTML = menuItems;
 }
