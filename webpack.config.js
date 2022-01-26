@@ -44,6 +44,10 @@ module.exports = {
             template: "./src/index.html",
         }),
         new HtmlWebpackPlugin({
+            filename: "menu.html",
+            template: "./src/menu.html",
+        }),
+        new HtmlWebpackPlugin({
             filename: "wcm-structure.html",
             template: "./src/wcm-structure/wcm-structure.html",
         }),

@@ -1,22 +1,30 @@
 import "./index.css";
 import "../components/images.js";
-import { menuItems } from "../components/menu.js";
-import { cards, slide, sidebar, menuContainer, menuButtons, logotype, activeClass, deactiveSectionClass, page, content, popups, menuTemplate } from "../components/constants.js";
-import { openPopup, closePopup, closePopupByEscape, closePopupByOverlay, popupAddListeners } from "../components/popup.js";
 
-setEventListeners();
-setMenuActive(menuButtons);
-// renderMenu();
+const sidebar = document.querySelector(".sidebar");
+const slide = document.querySelector(".section");
+const logotype = document.querySelector(".header__logo");
+const content = document.querySelector(".content__wrapper");
+const cards = document.querySelectorAll(".section-content__card");
 
-function setEventListeners() {
-    sidebar.addEventListener("mouseover", menuOpen);
-    sidebar.addEventListener("mouseout", menuClose);
-    cards.forEach((card) => {
-        card.addEventListener("click", () => {
-            openPopup(card.id);
+fetch("../menu.html")
+    .then((response) => {
+        return response.text();
+    })
+    .then((html) => {
+        sidebar.innerHTML = html;
+    })
+    .then(() => {
+        const menuContainer = sidebar.querySelector(".menu");
+        const menuButtons = menuContainer.querySelectorAll(".menu__item");
+        sidebar.addEventListener("mouseover", () => {
+            menuOpen(menuContainer);
         });
+        sidebar.addEventListener("mouseout", () => {
+            menuClose(menuContainer);
+        });
+        setMenuActive(menuButtons);
     });
-}
 
 function setMenuActive(menuButtons) {
     menuButtons.forEach((menuButton) => {
@@ -28,16 +36,12 @@ function setMenuActive(menuButtons) {
     });
 }
 
-function menuOpen() {
+function menuOpen(menuContainer) {
     menuContainer.classList.remove("menu_disabled");
 }
 
-function menuClose() {
+function menuClose(menuContainer) {
     if (!slide.classList.contains("home-screen")) {
         menuContainer.classList.add("menu_disabled");
     }
-}
-
-function renderMenu() {
-    sidebar.innerHTML = menuItems;
 }

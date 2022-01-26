@@ -1,0 +1,21 @@
+.section-content__card__selector {
+    @include defaultText;
+    text-decoration: none;
+    color: $white;
+    background-color: $GoldenFishBlue;
+    height: calc(50% - 35px);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 10px;
+    transition: 0.2s;
+
+    &:hover {
+        background-color: $blue;
+        transition: 0.2s;
+    }
+
+    &:first-of-type {
+        border-bottom: 1px solid $grey;
+    }
+}
