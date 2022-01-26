@@ -11,14 +11,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/slam-cheg/Oltermanni.git"
+        "url": "git+https://github.com/slam-cheg/WCM-guide.git"
     },
     "author": "Lev Shushkov",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/slam-cheg/Oltermanni/issues"
+        "url": "https://github.com/slam-cheg/WCM-guide/issues"
     },
-    "homepage": "https://github.com/slam-cheg/Oltermanni#readme",
+    "homepage": "https://github.com/slam-cheg/WCM-guide#readme",
     "devDependencies": {
         "@babel/core": "^7.16.10",
         "@babel/preset-env": "^7.16.11",
