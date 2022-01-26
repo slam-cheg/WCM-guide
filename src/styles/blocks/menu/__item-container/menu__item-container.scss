@@ -1,0 +1,22 @@
+.menu__item-container {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    width: 100%;
+
+    &:hover {
+        transition: 0.2s;
+        background-color: $blue;
+        border-left-color: $blue;
+
+        &::after {
+            position: absolute;
+            content: "";
+            left: 5px;
+            border-top: 8px solid transparent;
+            border-left: 6px solid;
+            border-left-color: inherit;
+            border-bottom: 8px solid transparent;
+        }
+    }
+}

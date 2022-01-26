@@ -1,0 +1,10 @@
+.menu__subitem-contaier {
+    display: none;
+    flex-direction: column;
+    width: 300px;
+    transition: 0.2s;
+}
+
+.menu__item:hover .menu__subitem-contaier {
+    display: flex;
+}

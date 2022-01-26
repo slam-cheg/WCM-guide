@@ -1,6 +1,7 @@
-.menu__item_active {
+.menu__item-container_active {
     border-left-color: $red;
     background-color: $red;
+    position: relative;
 
     &::after {
         position: absolute;

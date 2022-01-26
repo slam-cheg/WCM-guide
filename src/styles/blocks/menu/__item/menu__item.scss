@@ -1,29 +1,14 @@
 .menu__item {
-    height: 50px;
+    position: relative;
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     list-style: none;
     margin: 0 0 10px;
-    align-items: center;
+    align-items: flex-start;
     transition: 0.2s;
 
     &:last-of-type {
         margin: 0;
-    }
-
-    &:hover {
-        transition: 0.2s;
-        background-color: $blue;
-        border-left-color: $blue;
-
-        &::after {
-            position: absolute;
-            content: "";
-            left: 5px;
-            border-top: 8px solid transparent;
-            border-left: 6px solid;
-            border-left-color: inherit;
-            border-bottom: 8px solid transparent;
-        }
     }
 }

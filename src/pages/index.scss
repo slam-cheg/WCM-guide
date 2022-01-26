@@ -34,12 +34,16 @@
 @import "../styles/blocks/menu/menu.scss";
 @import "../styles/blocks/menu/_disabled/menu_disabled.scss";
 @import "../styles/blocks/menu/__item/menu__item.scss";
-@import "../styles/blocks/menu/__item/_active/menu__item_active.scss";
 @import "../styles/blocks/menu/__ico-wrapper/menu__ico-wrapper.scss";
 @import "../styles/blocks/menu/__ico/menu__ico.scss";
 @import "../styles/blocks/menu/__text-wrapper/menu__text-wrapper.scss";
 @import "../styles/blocks/menu/__text/menu__text.scss";
 @import "../styles/blocks/menu/__link/menu__link.scss";
+@import "../styles/blocks/menu/__item-container/menu__item-container.scss";
+@import "../styles/blocks/menu/__item-container/_active/menu__item-container_active.scss";
+@import "../styles/blocks/menu/__subitem-container/menu__subitem-container.scss";
+@import "../styles/blocks/menu/__subitem/menu__subitem.scss";
+@import '../styles/blocks/menu/__subitem-link/menu__subitem-link.scss';
 //homescreen
 @import "../styles/blocks/home-screen/home-screen.scss";
 @import "../styles/blocks/home-screen/__image/home-screen__image.scss";

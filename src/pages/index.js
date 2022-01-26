@@ -16,7 +16,7 @@ fetch("../menu.html")
     })
     .then(() => {
         const menuContainer = sidebar.querySelector(".menu");
-        const menuButtons = menuContainer.querySelectorAll(".menu__item");
+        const menuButtons = menuContainer.querySelectorAll(".menu__item-container");
         sidebar.addEventListener("mouseover", () => {
             menuOpen(menuContainer);
         });
@@ -29,7 +29,7 @@ fetch("../menu.html")
 function setMenuActive(menuButtons) {
     menuButtons.forEach((menuButton) => {
         if (menuButton.id === slide.id) {
-            menuButton.classList.add("menu__item_active");
+            menuButton.classList.add("menu__item-container_active");
         } else {
             menuButton.classList.remove("menu__item_active");
         }
