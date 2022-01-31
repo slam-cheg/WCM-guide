@@ -1,7 +1,15 @@
 .menu_disabled {
     transition: 0.2s;
+    width: 65px;
+
+    .menu__text-wrapper {
+        opacity: 0;
+        pointer-events: none;
+        position: absolute;
+        visibility: hidden;
+    }
 
     .menu__text {
-        display: none;
+        pointer-events: none;
     }
 }

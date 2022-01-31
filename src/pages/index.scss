@@ -41,9 +41,11 @@
 @import "../styles/blocks/menu/__link/menu__link.scss";
 @import "../styles/blocks/menu/__item-container/menu__item-container.scss";
 @import "../styles/blocks/menu/__item-container/_active/menu__item-container_active.scss";
+@import "../styles/blocks/menu/__item/_opened/menu__item_opened.scss";
 @import "../styles/blocks/menu/__subitem-container/menu__subitem-container.scss";
 @import "../styles/blocks/menu/__subitem/menu__subitem.scss";
-@import '../styles/blocks/menu/__subitem-link/menu__subitem-link.scss';
+@import "../styles/blocks/menu/__subitem-container/_opened/menu__subitem-container_opened.scss";
+@import "../styles/blocks/menu/__subitem-link/menu__subitem-link.scss";
 //homescreen
 @import "../styles/blocks/home-screen/home-screen.scss";
 @import "../styles/blocks/home-screen/__image/home-screen__image.scss";

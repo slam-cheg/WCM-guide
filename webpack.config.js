@@ -45,11 +45,27 @@ module.exports = {
         }),
         new HtmlWebpackPlugin({
             filename: "menu.html",
-            template: "./src/menu.html",
+            template: "./src/pages/menu.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "header.html",
+            template: "./src/pages/header.html",
         }),
         new HtmlWebpackPlugin({
             filename: "wcm-structure.html",
-            template: "./src/wcm-structure/wcm-structure.html",
+            template: "./src/wcm-structure.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "campaigns.html",
+            template: "./src/campaigns.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "campaign-structure.html",
+            template: "./src/campaign-structure.html",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "campaign-report.html",
+            template: "./src/campaign-report.html",
         }),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin(),

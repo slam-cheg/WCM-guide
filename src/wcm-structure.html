@@ -6,18 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WCM-structure | WCM-guide</title>
     </head>
-    <body class="page page__light">
-        <header class="header">
-            <div class="header__logo-wrapper">
-                <a href="/" class="header__logo-wrapper">
-                    <img class="header__logo" src="<%=require('../images/logo.png')%>" alt="Weborama" />
-                </a>
-            </div>
-            <div class="header__title-wrapper">
-                <p class="header__title">Weborama campaign manager</p>
-                <p class="header__description">AD serving solution</p>
-            </div>
-        </header>
+    <body class="page page__light" style="overflow: hidden">
+        <header class="header"></header>
         <main class="content">
             <aside class="sidebar sidebar_disabled"></aside>
             <div class="content__wrapper content_resized">
@@ -26,11 +16,10 @@
                         <h2 class="section-heading__title">Интерфейс WCM содержит <span>5 основных вкладок:</span></h2>
                     </div>
                     <div class="home-screen__selection"></div>
-                    <img class="first-screen__image" src="<%=require('../images/firstscreen.jpg')%>" alt="Интерфейс WCM" />
+                    <img class="first-screen__image" src="<%=require('./images/firstscreen.jpg')%>" alt="Интерфейс WCM" />
 
                     <div class="section-content">
                         <div class="section-content__card" id="campaigns">
-                            <!-- Написать стили и замену контента -->
                             <div class="section-content__card_default section-content__card_default_deactive">
                                 <div class="section-content__card__num-wrapper"><span>1</span></div>
                                 <h3 class="section-content__card__title">Campaigns</h3>
@@ -41,9 +30,9 @@
                                 </ul>
                             </div>
                             <div class="section-content__card_hover">
-                                <a class="section-content__card__heading" href="#">Campaigns</a>
-                                <a class="section-content__card__selector" href="#">Просмотр структуры кампании</a>
-                                <a class="section-content__card__selector" href="#">Отчет по кампании</a>
+                                <a class="section-content__card__heading" href="campaigns.html">Campaigns</a>
+                                <a class="section-content__card__selector" href="campaign-structure.html">Просмотр структуры кампании</a>
+                                <a class="section-content__card__selector" href="campaign-report.html">Отчет по кампании</a>
                             </div>
                         </div>
                         <div class="section-content__card" id="creative-library">

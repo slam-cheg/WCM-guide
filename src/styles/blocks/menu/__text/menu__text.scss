@@ -2,6 +2,6 @@
     @include menuFont;
     visibility: visible;
     opacity: 1;
-    transform: scaleX(1);
-    transition: .2s;
+    pointer-events: auto;
+    width: 230px;
 }
